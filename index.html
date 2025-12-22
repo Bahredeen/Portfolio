@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahredin Ali Muzeyin| Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Bahredin Ali Muzeyin</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">Operations & Data Specialist</span>
+                <h1>Transforming Data into <br> Operational Excellence</h1>
+                <p>I combine <strong>Materials Engineering</strong> with <strong>Data Science</strong> to optimize manufacturing processes. Proven track record at Tabor Ceramics and Nutricare.</p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn-primary">Hire Me</a>
+                    <a href="#experience" class="btn-secondary">View Work</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="Profile.jpg" alt="Bahredin Ali" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a results-driven professional with a dual-background in <strong>Materials Engineering</strong> and <strong>Data Science</strong>. I graduated from Adola Science & Technology University (ASTU) and later specialized in Project Planning.</p>
+                    <br>
+                    <p>My passion lies in bridging the gap between physical manufacturing and digital intelligence to improve efficiency and quality control.</p>
+                    
+                    <div class="degree-box">
+                        <img src="Astu.jpg" alt="ASTU Degree" class="doc-thumbnail" onclick="openModal('Astu.jpg')">
+                         <span class="caption"><i class="fas fa-search-plus"></i> View BSC Degree</span>
+                         <img src="Yom.png" alt="Postgraduate Degree" class="doc-thumbnail" onclick="openModal('Yom.png')">
+                        <span class="caption"><i class="fas fa-search-plus"></i> View Postgraduate Degree</span>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="card">
+                        <i class="fas fa-industry"></i>
+                        <h4>Industrial Operations</h4>
+                        <p>Experience in Ceramics & Concrete production.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Data Science</h4>
+                        <p>Certified in AI & Data Analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Work History</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Nov 2020 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Division Head & Production Supervisor</h3>
+                        <h4>Tabor Ceramics Product S.C.</h4>
+                        <p>Promoted from Foreman to Supervisor, then to Division Head. Responsible for the Fuse and Composite Insulator Production Department. I lead operations planning and monitoring.</p>
+                        <button class="doc-btn" onclick="openModal('Tabor.png')">
+                            <i class="fas fa-file-alt"></i> View Experience Letter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Nov 2018 - May 2020</div>
+                    <div class="timeline-content">
+                        <h3>Technical Supervisor</h3>
+                        <h4>Nutricare Manufacturing PLC</h4>
+                        <p>Supervised overall working sequences and machinery maintenance. Ensured tax compliance and managed production workflows for 1.5 years.</p>
+                        <button class="doc-btn" onclick="openModal('Nutricare.png.jpg')">
+                            <i class="fas fa-file-alt"></i> View Experience Letter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Oct 2016 - Aug 2018</div>
+                    <div class="timeline-content">
+                        <h3>Quality Control Expert</h3>
+                        <h4>Kabew Construction PLC</h4>
+                        <p>Served at the Adola Wayu Concrete Pole Factory. Worked on quality assurance and acted as a delegated head for supportive staff.</p>
+                        <button class="doc-btn" onclick="openModal('Kabew.jpg')">
+                            <i class="fas fa-file-alt"></i> View Experience Letter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">Click on any certificate to view high-resolution version</p>
+            
+            <div class="cert-grid">
+                <div class="cert-card" onclick="openModal('Data.png')">
+                    <div class="cert-img-wrapper">
+                        <img src="Data.png" alt="Udacity Data Analysis">
+                        <div class="overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Data Analysis Fundamentals</h4>
+                        <span>Udacity</span>
+                    </div>
+                </div>
+
+                <div class="cert-card" onclick="openModal('AI.png')">
+                    <div class="cert-img-wrapper">
+                        <img src="AI.png" alt="Udacity AI">
+                        <div class="overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="cert-info">
+                        <h4>AI Fundamentals</h4>
+                        <span>Udacity</span>
+                    </div>
+                </div>
+
+                <div class="cert-card" onclick="openModal('Ore Data .png')">
+                    <div class="cert-img-wrapper">
+                        <img src="Ore Data .png" alt="O'Reilly Data Science">
+                        <div class="overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Data Science & ML A-Z</h4>
+                        <span>O'Reilly (93 Hours)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <div class="languages">
+                        <strong>Languages:</strong> English, Amharic, Arabic, Afan Oromo, Siltigna.
+                    </div>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+251 942 211 142</p>
+                        <p>+251 933 852 875</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>bahredeen@gmail.com</p>
+                        <p>OR</p>
+                        <p>astugc2008@gmail.com</p>
+                    </div>
+                    
+                    <div>
+                        <form class="contact-form">
+                    <input type="text" placeholder="Your Name/Your Company" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Message"></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bahredin Ali. All Rights Reserved.</p>
+    </footer>
+
+    <div id="docModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
