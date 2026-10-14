@@ -32,8 +32,8 @@ ul { list-style: none; }
 .hero { height: 200vh; display: flex; align-items: center; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding-top: 70px; }
 .hero-content { display: flex; align-items: center; justify-content: space-between; gap: 50px; }
 .hero-text { flex: 1; }
-.badge { background: var(--secondary); color: var(--white); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; text-transform: uppercase; }
-.hero h1 { font-size: 2rem; margin: 20px 0; color: var(--dark); line-height: 1.2; }
+.badge { background: var(--secondary); color: var(--white); padding: 5px 15px; border-radius: 20px; font-size: 1.5rem; text-transform: uppercase; }
+.hero h1 { font-size: .9rem; margin: 20px 0; color: var(--dark); line-height: 1.2; }
 .hero-image-container { flex: 1; display: flex; justify-content: center; }
 .profile-img { width: 300px; height: 300px; object-fit: cover; object-position: top; border-radius: 25%; border: 2px solid var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
 
