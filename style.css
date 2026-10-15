@@ -29,7 +29,7 @@ ul { list-style: none; }
 .hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
 
 /* --- Hero Section --- */
-.hero { height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding-top: 70px; }
+.hero { height: 150vh; display: flex; align-items: center; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding-top: 70px; }
 .hero-content { display: flex; align-items: center; justify-content: space-between; gap: 25px; }
 .hero-text { flex: 1; }
 .badge { background: var(--secondary); color: var(--white); padding: 5px 15px; border-radius: 20px; font-size: 1.5rem; text-transform: uppercase; }
